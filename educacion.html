@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+    <meta name="author" content="Faber Baron">
+    <title>fjbaron Diseño</title>
+  </head>
+  <body>
+  <!-- 1. Logo SVG utiliza algunas de las herramientas SVG en línea para diseñar el logo con tus iniciales, utiliza los colores y formas que prefieras.-->
+        <img src="images/icon.svg" alt="logo svg" width="20%">
+<!--2. Título aquí te sugerimos coloques el título de tu documento, "Hoja de Vida" o "Curriculum Vitae" o "Resumen Curricular". utilizando la etiqueta h1.-->
+    <p>
+      <h1>Hoja de Vida</h1>
+<!--3. Datos Personales indica tus nombres, apellidos, fecha y lugar de nacimiento utilizando las etiquetas h2 y h3.-->
+      <h2>Faber Javier Barón Pérez</h2>
+      <h3>05/03/1990 Arboletes, Ant.</h3>
+    </p>
+    <br>
+<!--4. Enlaces de menú básico para enlazar las tres páginas que tiene tu proyecto: Inicio (index.html), educación (educacion.html), experiencia (experiencia.html).-->
+    <p>
+      <a href="index.html">Inicio</a> | <a href="educacion.html">Educación</a> | <a href="experiencia.html">Experiencia</a>
+    </p>
+    <br>
+<!--5. Incorpora un título en h2 Educación.-->
+    <p>
+      <h2>Educación</h2>
+    </p>
+<!--6. Codifica una Tabla de 4 columnas (Año, Institución, Lugar, ¿Culminó?) por 3 filas (o más si deseas) para indicar los datos sobre tus certificados, cursos, título, entre otros.-->
+    <style>
+    table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    }
+    </style>
+    <table style="width:50%">
+      <tr>
+        <th>Año</th>
+        <th>Institución</th>
+        <th>Lugar</th>
+        <th>¿Culminó?</th>
+      </tr>
+      <tr>
+        <td>2006</td>
+        <td>I.E.R. La Candelaria</td>
+        <td>Arboletes</td>
+        <td>Si</td>
+      </tr>
+      <tr>
+        <td>2008</td>
+        <td>Sena</td>
+        <td>Arboletes</td>
+        <td>Si</td>
+      </tr>
+      <tr>
+        <td>2016</td>
+        <td>UNAD</td>
+        <td>Villavicencio</td>
+        <td>Si</td>
+      </tr>
+      <tr>
+        <td>2018</td>
+        <td>Next University</td>
+        <td>Villavicencio</td>
+        <td>No</td>
+      </tr>
+    </table>
+<!--7. Dibuja un Formulario titulado "Agregar Estudios" con los siguientes elementos:
+Una lista desplegable para el Año.
+Una caja de entrada de texto para Institución, agrega la validación de campo requerido.
+Una caja de entrada de texto largo para Lugar.
+Un botón "Enviar".-->
+    <h2>Agregar Estudios</h2>
+    <form>
+      <p>
+        <label for="date">Año:</label>
+        <select>
+          <option> 2008 </option>
+          <option> 2009 </option>
+          <option> 2010 </option>
+          <option> 2011 </option>
+          <option> 2012 </option>
+          <option> 2013 </option>
+          <option> 2014 </option>
+          <option> 2015 </option>
+          <option> 2016 </option>
+          <option> 2017 </option>
+          <option> 2018 </option>
+          <option> 2019 </option>
+        </select>
+      </p>
+      <p>
+        <label for="name">Institución:</label>
+        <input type="text" name="name" placeholder="Ej: Institución la Candelaria" required>
+      </p>
+      <p>
+        <label for="name">Lugar:</label>
+        <input type="text" name="name" placeholder="Ej: Bogotá" required>
+      </p>
+      <br>
+      <p>
+        <input type="submit" value="Enviar">
+      </p>
+    </form>
+    <br>
+<!--8. Pie de Página en esta sección debes colocar información de contacto como: correo eléctrónico, teléfono, redes sociales o dirección.-->
+    <footer>
+      <p>
+        <a href="mailto:fjbaron948@outlook.es">Contacto</a> | <a href="index.html">Acerca de</a> | <a href="https://www.facebook.com" target="_blank">Sígeme en Facebook</a> | Teléfono (031)6626734 Bog, Co
+        <br>
+        <br>
+        Todos los derechos reservados <a href="index.html">fjbaron Diseño</a>
+      </p>
+    </footer>
+  </body>
+</html>
